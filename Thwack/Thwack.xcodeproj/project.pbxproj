@@ -12,6 +12,8 @@
 		16F4305122DFACC400944485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F4304F22DFACC400944485 /* Main.storyboard */; };
 		16F4305322DFACC500944485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F4305222DFACC500944485 /* Assets.xcassets */; };
 		16F4305622DFACC500944485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F4305422DFACC500944485 /* LaunchScreen.storyboard */; };
+		16F4306122DFB1CC00944485 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F4306022DFB1CC00944485 /* SWRevealViewController.m */; };
+		B01608C1720165D1376F661C /* Pods_Thwack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA23D145E1B4A495465005C8 /* Pods_Thwack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,12 @@
 		16F4305222DFACC500944485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16F4305522DFACC500944485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16F4305722DFACC500944485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F4305E22DFB1CB00944485 /* Thwack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thwack-Bridging-Header.h"; sourceTree = "<group>"; };
+		16F4305F22DFB1CC00944485 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		16F4306022DFB1CC00944485 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		ACBFDC7AC4C4F6DFAFBD8036 /* Pods-Thwack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thwack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Thwack/Pods-Thwack.release.xcconfig"; sourceTree = "<group>"; };
+		BA23D145E1B4A495465005C8 /* Pods_Thwack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thwack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE195756AC6FA6359B76222 /* Pods-Thwack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thwack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thwack/Pods-Thwack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B01608C1720165D1376F661C /* Pods_Thwack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				16F4304A22DFACC400944485 /* Thwack */,
 				16F4304922DFACC400944485 /* Products */,
+				AA0245FB27B992D914064599 /* Pods */,
+				20D52E64008E3301C7D1540C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +65,7 @@
 		16F4304A22DFACC400944485 /* Thwack */ = {
 			isa = PBXGroup;
 			children = (
+				16F4305D22DFB1B500944485 /* Supporting Files */,
 				16F4304B22DFACC400944485 /* AppDelegate.swift */,
 				16F4304D22DFACC400944485 /* ViewController.swift */,
 				16F4304F22DFACC400944485 /* Main.storyboard */,
@@ -64,6 +76,33 @@
 			path = Thwack;
 			sourceTree = "<group>";
 		};
+		16F4305D22DFB1B500944485 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16F4305F22DFB1CC00944485 /* SWRevealViewController.h */,
+				16F4306022DFB1CC00944485 /* SWRevealViewController.m */,
+				16F4305E22DFB1CB00944485 /* Thwack-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20D52E64008E3301C7D1540C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA23D145E1B4A495465005C8 /* Pods_Thwack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA0245FB27B992D914064599 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAE195756AC6FA6359B76222 /* Pods-Thwack.debug.xcconfig */,
+				ACBFDC7AC4C4F6DFAFBD8036 /* Pods-Thwack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16F4305A22DFACC500944485 /* Build configuration list for PBXNativeTarget "Thwack" */;
 			buildPhases = (
+				03C9A4671D7AA38907222471 /* [CP] Check Pods Manifest.lock */,
 				16F4304422DFACC400944485 /* Sources */,
 				16F4304522DFACC400944485 /* Frameworks */,
 				16F4304622DFACC400944485 /* Resources */,
+				56D25EF8C01D4BA793F8CF99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					16F4304722DFACC400944485 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +172,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03C9A4671D7AA38907222471 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Thwack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56D25EF8C01D4BA793F8CF99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Thwack/Pods-Thwack-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thwack/Pods-Thwack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16F4304422DFACC400944485 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +224,7 @@
 			files = (
 				16F4304E22DFACC400944485 /* ViewController.swift in Sources */,
 				16F4304C22DFACC400944485 /* AppDelegate.swift in Sources */,
+				16F4306122DFB1CC00944485 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +368,10 @@
 		};
 		16F4305B22DFACC500944485 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAE195756AC6FA6359B76222 /* Pods-Thwack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QK74KTAZV;
 				INFOPLIST_FILE = Thwack/Info.plist;
@@ -291,6 +381,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.happygiraffe.Thwack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thwack/Supporting Files/Thwack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +390,10 @@
 		};
 		16F4305C22DFACC500944485 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACBFDC7AC4C4F6DFAFBD8036 /* Pods-Thwack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QK74KTAZV;
 				INFOPLIST_FILE = Thwack/Info.plist;
@@ -309,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.happygiraffe.Thwack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thwack/Supporting Files/Thwack-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
