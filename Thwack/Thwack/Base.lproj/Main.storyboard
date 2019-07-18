@@ -204,7 +204,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsa-cb-UwC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsa-cb-UwC" customClass="RoundedButton" customModule="Thwack" customModuleProvider="target">
                                 <rect key="frame" x="82" y="283" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -266,6 +266,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="3VM-O5-6TV" eventType="touchUpInside" id="4WF-wA-kBo"/>
+                                    <action selector="pickAvatarPressed:" destination="Ela-ks-RNU" eventType="touchUpInside" id="MnI-AZ-Mea"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="kKV-eT-q2M">
@@ -324,7 +325,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIX-oD-ffj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIX-oD-ffj" customClass="RoundedButton" customModule="Thwack" customModuleProvider="target">
                                 <rect key="frame" x="82" y="832" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -334,6 +335,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="Ela-ks-RNU" eventType="touchUpInside" id="3Rv-Ra-VC5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBm-T9-7Ap">
                                 <rect key="frame" x="131.5" y="104" width="151" height="20.5"/>
@@ -349,13 +353,14 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3f-6D-wh1">
-                                <rect key="frame" x="130" y="453" width="155" height="27"/>
+                                <rect key="frame" x="129.5" y="453" width="155" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Generate background color">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="3VM-O5-6TV" eventType="touchUpInside" id="ME0-OJ-30X"/>
+                                    <action selector="pickBgColorPressed:" destination="Ela-ks-RNU" eventType="touchUpInside" id="N4J-WN-q9K"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -380,6 +385,10 @@
                         <viewLayoutGuide key="safeArea" id="ktJ-YC-fS6"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="SIJ-hU-MaQ" id="jGR-Lb-wyF"/>
+                        <outlet property="passTxt" destination="sIn-si-wG5" id="gut-4s-VEb"/>
+                        <outlet property="userImg" destination="rpe-Lh-UqG" id="WRE-co-vgF"/>
+                        <outlet property="usernameTxt" destination="SjQ-t0-pqd" id="le1-82-iAm"/>
                         <segue destination="b7S-iN-gyr" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="lzl-Yt-myA"/>
                     </connections>
                 </viewController>
