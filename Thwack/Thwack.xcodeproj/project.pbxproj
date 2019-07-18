@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160061AB22E0DC5300F5318A /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160061AA22E0DC5300F5318A /* CreateAccountVC.swift */; };
 		16F4304C22DFACC400944485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F4304B22DFACC400944485 /* AppDelegate.swift */; };
 		16F4304E22DFACC400944485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F4304D22DFACC400944485 /* ViewController.swift */; };
 		16F4305122DFACC400944485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F4304F22DFACC400944485 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160061AA22E0DC5300F5318A /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		16F4304822DFACC400944485 /* Thwack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thwack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F4304B22DFACC400944485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16F4304D22DFACC400944485 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				16F4306522DFB41200944485 /* ChatVC.swift */,
 				16F4306722DFB42300944485 /* ChannelVC.swift */,
 				16F4306E22DFCB5E00944485 /* LoginVC.swift */,
+				160061AA22E0DC5300F5318A /* CreateAccountVC.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				16F4306F22DFCB5E00944485 /* LoginVC.swift in Sources */,
 				16F4306A22DFB81500944485 /* GradientView.swift in Sources */,
 				16F4304C22DFACC400944485 /* AppDelegate.swift in Sources */,
+				160061AB22E0DC5300F5318A /* CreateAccountVC.swift in Sources */,
 				16F4306D22DFC54200944485 /* Constants.swift in Sources */,
 				16F4306122DFB1CC00944485 /* SWRevealViewController.m in Sources */,
 				16F4306822DFB42300944485 /* ChannelVC.swift in Sources */,
