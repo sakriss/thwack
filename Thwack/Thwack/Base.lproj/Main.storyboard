@@ -471,10 +471,10 @@
                         <constraints>
                             <constraint firstItem="QKX-cs-YOq" firstAttribute="top" secondItem="d2b-BT-Btf" secondAttribute="top" constant="8" id="1as-b3-fkq"/>
                             <constraint firstItem="97J-lQ-K3Y" firstAttribute="top" secondItem="d2b-BT-Btf" secondAttribute="top" id="1kR-H2-59A"/>
-                            <constraint firstItem="d2b-BT-Btf" firstAttribute="trailing" secondItem="FMg-47-Tfr" secondAttribute="trailing" id="7hR-hE-TH0"/>
                             <constraint firstItem="QKX-cs-YOq" firstAttribute="centerX" secondItem="dJY-0u-9I5" secondAttribute="centerX" id="BBv-xp-4YA"/>
                             <constraint firstItem="FMg-47-Tfr" firstAttribute="leading" secondItem="d2b-BT-Btf" secondAttribute="leading" id="MIe-z8-Juv"/>
                             <constraint firstItem="d2b-BT-Btf" firstAttribute="bottom" secondItem="FMg-47-Tfr" secondAttribute="bottom" id="WRI-gJ-xkj"/>
+                            <constraint firstItem="FMg-47-Tfr" firstAttribute="trailing" secondItem="d2b-BT-Btf" secondAttribute="trailing" id="Z6H-Cc-jto"/>
                             <constraint firstItem="FMg-47-Tfr" firstAttribute="top" secondItem="QKX-cs-YOq" secondAttribute="bottom" constant="20" id="Zx4-Z6-zgb"/>
                             <constraint firstItem="97J-lQ-K3Y" firstAttribute="leading" secondItem="d2b-BT-Btf" secondAttribute="leading" constant="20" id="kfq-De-z9X"/>
                         </constraints>
