@@ -63,7 +63,7 @@
                                     <action selector="loginBtnPressed:" destination="jil-Iw-PpG" eventType="touchUpInside" id="wvG-Pn-5eZ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="uJD-7G-Uj5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="uJD-7G-Uj5" customClass="CircleImage" customModule="Thwack" customModuleProvider="target">
                                 <rect key="frame" x="20" y="783" width="99" height="99"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HAH-ws-I9b">
@@ -350,7 +350,7 @@
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="rpe-Lh-UqG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="rpe-Lh-UqG" customClass="CircleImage" customModule="Thwack" customModuleProvider="target">
                                 <rect key="frame" x="157" y="308" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="dPe-UN-Orx"/>
@@ -368,6 +368,10 @@
                                     <action selector="pickBgColorPressed:" destination="Ela-ks-RNU" eventType="touchUpInside" id="N4J-WN-q9K"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vhA-3p-v6I">
+                                <rect key="frame" x="188.5" y="329.5" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -376,11 +380,13 @@
                             <constraint firstItem="nIX-oD-ffj" firstAttribute="bottom" secondItem="ktJ-YC-fS6" secondAttribute="bottom" constant="20" id="B8x-kY-1cu"/>
                             <constraint firstItem="I3f-6D-wh1" firstAttribute="top" secondItem="6gT-Js-iQW" secondAttribute="bottom" constant="15" id="FAX-Ft-AJI"/>
                             <constraint firstItem="rpe-Lh-UqG" firstAttribute="top" secondItem="kKV-eT-q2M" secondAttribute="bottom" constant="40" id="FWW-Bg-xNW"/>
+                            <constraint firstItem="vhA-3p-v6I" firstAttribute="centerX" secondItem="Hpb-ea-gnh" secondAttribute="centerX" id="JHY-RI-my1"/>
                             <constraint firstItem="kKV-eT-q2M" firstAttribute="centerX" secondItem="Hpb-ea-gnh" secondAttribute="centerX" id="KPS-nP-aB3"/>
                             <constraint firstItem="6gT-Js-iQW" firstAttribute="top" secondItem="rpe-Lh-UqG" secondAttribute="top" id="KYA-gc-yhv"/>
                             <constraint firstItem="NBm-T9-7Ap" firstAttribute="top" secondItem="ktJ-YC-fS6" secondAttribute="top" constant="60" id="RNP-6h-ESb"/>
                             <constraint firstItem="9ta-LB-Vst" firstAttribute="top" secondItem="ktJ-YC-fS6" secondAttribute="top" id="Rat-mz-Wkf"/>
                             <constraint firstItem="ktJ-YC-fS6" firstAttribute="trailing" secondItem="9ta-LB-Vst" secondAttribute="trailing" constant="20" id="V7p-VI-gbl"/>
+                            <constraint firstItem="vhA-3p-v6I" firstAttribute="centerY" secondItem="Hpb-ea-gnh" secondAttribute="centerY" constant="-100" id="fnX-eE-ZK8"/>
                             <constraint firstItem="NBm-T9-7Ap" firstAttribute="centerX" secondItem="Hpb-ea-gnh" secondAttribute="centerX" id="ggq-Gq-73Z"/>
                             <constraint firstItem="kKV-eT-q2M" firstAttribute="top" secondItem="NBm-T9-7Ap" secondAttribute="bottom" constant="51.5" id="hLV-Sh-6Ur"/>
                             <constraint firstItem="6gT-Js-iQW" firstAttribute="centerX" secondItem="Hpb-ea-gnh" secondAttribute="centerX" id="rld-ql-yWN"/>
@@ -392,6 +398,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="SIJ-hU-MaQ" id="jGR-Lb-wyF"/>
                         <outlet property="passTxt" destination="sIn-si-wG5" id="gut-4s-VEb"/>
+                        <outlet property="spinner" destination="vhA-3p-v6I" id="P2L-WM-2xZ"/>
                         <outlet property="userImg" destination="rpe-Lh-UqG" id="WRE-co-vgF"/>
                         <outlet property="usernameTxt" destination="SjQ-t0-pqd" id="le1-82-iAm"/>
                         <segue destination="b7S-iN-gyr" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="lzl-Yt-myA"/>
