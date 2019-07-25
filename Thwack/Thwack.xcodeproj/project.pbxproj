@@ -14,6 +14,8 @@
 		160DA20422E8DE2F00731C9A /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160DA20322E8DE2F00731C9A /* AvatarPickerVC.swift */; };
 		160DA20622E8E45900731C9A /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160DA20522E8E45900731C9A /* AvatarCell.swift */; };
 		160DA20822E9000200731C9A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160DA20722E9000200731C9A /* CircleImage.swift */; };
+		160DA20B22EA0E2700731C9A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160DA20922EA0E2700731C9A /* ProfileVC.swift */; };
+		160DA20C22EA0E2700731C9A /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160DA20A22EA0E2700731C9A /* ProfileVC.xib */; };
 		16F4304C22DFACC400944485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F4304B22DFACC400944485 /* AppDelegate.swift */; };
 		16F4304E22DFACC400944485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F4304D22DFACC400944485 /* ViewController.swift */; };
 		16F4305122DFACC400944485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F4304F22DFACC400944485 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 		160DA20322E8DE2F00731C9A /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		160DA20522E8E45900731C9A /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		160DA20722E9000200731C9A /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		160DA20922EA0E2700731C9A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		160DA20A22EA0E2700731C9A /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		16F4304822DFACC400944485 /* Thwack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thwack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F4304B22DFACC400944485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16F4304D22DFACC400944485 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		160DA20D22EA0E4600731C9A /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				160DA20A22EA0E2700731C9A /* ProfileVC.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 		16F4303F22DFACC400944485 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +110,7 @@
 		16F4304A22DFACC400944485 /* Thwack */ = {
 			isa = PBXGroup;
 			children = (
+				160DA20D22EA0E4600731C9A /* Xibs */,
 				160061AC22E1152C00F5318A /* Services */,
 				16F4306B22DFC53000944485 /* Utilities */,
 				16F4306422DFB3EB00944485 /* Group */,
@@ -132,6 +145,7 @@
 				16F4306E22DFCB5E00944485 /* LoginVC.swift */,
 				160061AA22E0DC5300F5318A /* CreateAccountVC.swift */,
 				160DA20322E8DE2F00731C9A /* AvatarPickerVC.swift */,
+				160DA20922EA0E2700731C9A /* ProfileVC.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -240,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160DA20C22EA0E2700731C9A /* ProfileVC.xib in Resources */,
 				16F4305622DFACC500944485 /* LaunchScreen.storyboard in Resources */,
 				16F4305322DFACC500944485 /* Assets.xcassets in Resources */,
 				16F4305122DFACC400944485 /* Main.storyboard in Resources */,
@@ -302,6 +317,7 @@
 				16F4304E22DFACC400944485 /* ViewController.swift in Sources */,
 				160DA20622E8E45900731C9A /* AvatarCell.swift in Sources */,
 				16F4306F22DFCB5E00944485 /* LoginVC.swift in Sources */,
+				160DA20B22EA0E2700731C9A /* ProfileVC.swift in Sources */,
 				16F4306A22DFB81500944485 /* GradientView.swift in Sources */,
 				16F4304C22DFACC400944485 /* AppDelegate.swift in Sources */,
 				160061AB22E0DC5300F5318A /* CreateAccountVC.swift in Sources */,

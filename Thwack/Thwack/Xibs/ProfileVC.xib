@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="Thwack" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="1ux-wf-wcT" id="fv1-GK-Pvh"/>
+                <outlet property="profileImage" destination="sJ5-qm-p54" id="OH2-hi-zhB"/>
+                <outlet property="userEmail" destination="X3f-uY-mO7" id="Dky-nD-4vW"/>
+                <outlet property="userName" destination="buI-JB-7Fj" id="HJb-lg-x2g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ux-wf-wcT" userLabel="bgView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPC-gt-aKz">
+                    <rect key="frame" x="20" y="288" width="374" height="320"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnw-da-ONV">
+                            <rect key="frame" x="338" y="8" width="28" height="28"/>
+                            <state key="normal" image="closeButton"/>
+                            <connections>
+                                <action selector="closeModalPressed:" destination="-1" eventType="touchUpInside" id="XCT-4F-q0u"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="UWA-zv-OKe">
+                            <rect key="frame" x="123.5" y="35" width="127.5" height="210.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMJ-v4-7vl">
+                                    <rect key="frame" x="7.5" y="0.0" width="112.5" height="27.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                    <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="sJ5-qm-p54" customClass="CircleImage" customModule="Thwack" customModuleProvider="target">
+                                    <rect key="frame" x="13.5" y="41.5" width="100" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="MVf-RT-AlG"/>
+                                        <constraint firstAttribute="width" constant="100" id="Rvj-hn-w7L"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scott" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buI-JB-7Fj">
+                                    <rect key="frame" x="43" y="155.5" width="41" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scott@kriss.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3f-uY-mO7">
+                                    <rect key="frame" x="0.0" y="190" width="127.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAk-mN-x9P">
+                            <rect key="frame" x="156" y="276" width="62" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Logout"/>
+                            <connections>
+                                <action selector="logoutPressed:" destination="-1" eventType="touchUpInside" id="tG4-Rn-W33"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lAk-mN-x9P" firstAttribute="centerX" secondItem="BPC-gt-aKz" secondAttribute="centerX" id="4Xl-xa-Knu"/>
+                        <constraint firstAttribute="bottom" secondItem="lAk-mN-x9P" secondAttribute="bottom" constant="8" id="Og7-cP-Cj7"/>
+                        <constraint firstItem="UWA-zv-OKe" firstAttribute="centerY" secondItem="BPC-gt-aKz" secondAttribute="centerY" constant="-20" id="RH2-Qb-1hK"/>
+                        <constraint firstItem="cnw-da-ONV" firstAttribute="top" secondItem="BPC-gt-aKz" secondAttribute="top" constant="8" id="iYT-BZ-RLB"/>
+                        <constraint firstAttribute="height" constant="320" id="kO9-ie-mgC"/>
+                        <constraint firstItem="UWA-zv-OKe" firstAttribute="centerX" secondItem="BPC-gt-aKz" secondAttribute="centerX" id="vSr-pJ-xWP"/>
+                        <constraint firstAttribute="trailing" secondItem="cnw-da-ONV" secondAttribute="trailing" constant="8" id="zIc-PS-8Ib"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1ux-wf-wcT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="67d-bg-zDn"/>
+                <constraint firstItem="1ux-wf-wcT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IwB-jw-QtW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1ux-wf-wcT" secondAttribute="bottom" id="TUe-QC-JVQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BPC-gt-aKz" secondAttribute="trailing" constant="20" id="W61-2x-bxg"/>
+                <constraint firstItem="BPC-gt-aKz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="aPw-3u-nF3"/>
+                <constraint firstItem="BPC-gt-aKz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="l8P-WW-kTF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1ux-wf-wcT" secondAttribute="trailing" id="uDc-J0-ST9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeButton" width="28" height="28"/>
+        <image name="profileDefault" width="192" height="192"/>
+    </resources>
+</document>
