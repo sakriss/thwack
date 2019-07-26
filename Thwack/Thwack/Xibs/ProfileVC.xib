@@ -25,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ux-wf-wcT" userLabel="bgView">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPC-gt-aKz">
@@ -91,9 +91,9 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="1ux-wf-wcT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="67d-bg-zDn"/>
+                <constraint firstItem="1ux-wf-wcT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="67d-bg-zDn"/>
                 <constraint firstItem="1ux-wf-wcT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IwB-jw-QtW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1ux-wf-wcT" secondAttribute="bottom" id="TUe-QC-JVQ"/>
+                <constraint firstAttribute="bottom" secondItem="1ux-wf-wcT" secondAttribute="bottom" id="TUe-QC-JVQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BPC-gt-aKz" secondAttribute="trailing" constant="20" id="W61-2x-bxg"/>
                 <constraint firstItem="BPC-gt-aKz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="aPw-3u-nF3"/>
                 <constraint firstItem="BPC-gt-aKz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="l8P-WW-kTF"/>
