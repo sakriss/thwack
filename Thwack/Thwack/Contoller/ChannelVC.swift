@@ -15,6 +15,12 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    @IBAction func addChannelPressed(_ sender: Any) {
+        let addChannel = AddChannelVC()
+        addChannel.modalPresentationStyle = .custom
+        present(addChannel, animated: true, completion: nil)
+    }
+    
     @IBOutlet weak var userImage: CircleImage!
     @IBOutlet weak var tableView: UITableView!
     
